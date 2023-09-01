@@ -13,7 +13,7 @@
   <body>
     <h1>Hello, world!</h1>
 
-    <a href="#" class="btn btn-sm btn-success mb-3">Download</a>
+    <a href="<?= site_url("downlord") ?>" class="btn btn-sm btn-success mb-3">Download</a>
     <table class="table">
       <thead>
         <tr>
