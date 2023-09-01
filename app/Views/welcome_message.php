@@ -31,7 +31,7 @@
             foreach ($tableData as $index => $row) {
         ?>
           <tr>
-            <th scope="row"><?= $index + 1 ?></th>
+            <th scope="row"><?= $index ?></th>
             <td><?= $row->firstname ?></td>
             <td><?= $row->lastname ?></td>
             <td><?= $row->address ?></td>
@@ -50,6 +50,7 @@
             </td>
           </tr>
         <?php
+              $index++;
             }
           }
         ?>

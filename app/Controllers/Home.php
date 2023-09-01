@@ -11,8 +11,7 @@ use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Exports\DataExport;
-
-
+use CodeIgniter\Database\Query;
 
 class Home extends BaseController
 {
@@ -26,10 +25,11 @@ class Home extends BaseController
      public function downlord()
      {
         $model = new CommonModel();
-        $spreadsheet = new Excel();
+        $spreadsheet = new Spreadsheet(); 
+        $result = $model->selectQuery();
         
 
-        $filename = 'downloaded_data.xlsx';
+        
 
        
 
